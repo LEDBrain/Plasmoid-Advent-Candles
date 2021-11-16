@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=AdventCandlesPlasmoid
+Icon=user-bookmarks-symbolic
+Type=Service
+ServiceTypes=Plasma/Applet
+
+X-KDE-PluginInfo-Author=LEDBrain
+X-KDE-PluginInfo-Email=opensource@ledbrain.de
+X-KDE-PluginInfo-Version=1.0.0
+X-KDE-PluginInfo-Category=Date and Time
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-Name=de.ledbrain.plasmoids.advent.candles
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+
