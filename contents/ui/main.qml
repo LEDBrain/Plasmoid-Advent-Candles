@@ -55,16 +55,16 @@ Item {
         flame_positions = new Array(4).fill(0).map(function(){return new Date().getTime() % Math.ceil(Math.random() * 6)});
         
         flames[0] = getCandleFlame(flame_positions[0], now > advent_1);
-        candle_1 = getCandleArt(getCandleHeight(8, advent_1, now), 1) + "\n" + advent_1.toLocaleString(Qt.locale("de_DE"), "dd.MM");
+        candle_1 = getCandleArt(getCandleHeight(8, advent_1, now), 1) + "\n" + advent_1.toLocaleString(Qt.locale(), "dd.MM");
         
         flames[1] = getCandleFlame(flame_positions[1], now > advent_2);
-        candle_2 = getCandleArt(getCandleHeight(6, advent_2, now), 2) + "\n" + advent_2.toLocaleString(Qt.locale("de_DE"), "dd.MM");
+        candle_2 = getCandleArt(getCandleHeight(6, advent_2, now), 2) + "\n" + advent_2.toLocaleString(Qt.locale(), "dd.MM");
         
         flames[2] = getCandleFlame(flame_positions[2], now > advent_3);
-        candle_3 = getCandleArt(getCandleHeight(4, advent_3, now), 3) + "\n" + advent_3.toLocaleString(Qt.locale("de_DE"), "dd.MM");
+        candle_3 = getCandleArt(getCandleHeight(4, advent_3, now), 3) + "\n" + advent_3.toLocaleString(Qt.locale(), "dd.MM");
         
         flames[3] = getCandleFlame(flame_positions[3], now > advent_4);
-        candle_4 = getCandleArt(getCandleHeight(2, advent_4, now), 4) + "\n" + advent_4.toLocaleString(Qt.locale("de_DE"), "dd.MM");
+        candle_4 = getCandleArt(getCandleHeight(2, advent_4, now), 4) + "\n" + advent_4.toLocaleString(Qt.locale(), "dd.MM");
     }
     
     Plasmoid.fullRepresentation: RowLayout {
